@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.container {
+    background-color: crimson;
+    padding: 2em;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input,
+button {
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: none; /* Removendo borda para consistência */
+    margin-bottom: 10px; /* Adicionando espaço entre os elementos */
+}
+
+button {
+    background-color: green;
+    color: white;
+    cursor: pointer; /* Adicionando cursor pointer para o botão */
+}
+
+button:hover {
+    background-color: darkgreen; /* Mudando a cor ao passar o mouse */
+}
