@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Created</h1>
+
+    <ul id="items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="remover()">remove</button>
+
+    <script>
+        const ul = document.getElementById('items');
+
+        function adicionar() {
+            const li = document.createElement('li');
+            const texto = document.createTextNode('Item 3');
+            li.appendChild(texto);
+            ul.appendChild(li);
+        }
+        
+        function remover() {
+            ul.removeChild(li)
+        }
+    </script>
+</body>
+</html>
